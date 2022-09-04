@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "8bf076c3-c2fe-4021-9ffb-f4710880cdc8",
+		"name": "api_csv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22818614"
+	},
+	"item": [
+		{
+			"name": "upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Sayel Munsi/Downloads/Untitled spreadsheet - Sheet1.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/products/upload_data/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"upload_data",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "csv_list",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "empty_handle",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
